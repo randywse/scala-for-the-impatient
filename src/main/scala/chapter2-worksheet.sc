@@ -1,6 +1,13 @@
+/*
+*Scala for impatient
+* chapter 2 exercises
+ */
+
 val blah="***********"
 
-//ex1
+/*ex1
+
+ */
 def signum(x: Int): Int = {
   if (x >0) 1
   else if (x<0) -1
@@ -11,17 +18,23 @@ signum(8)
 signum(0)
 signum(-98)
 
-//ex2
+/*ex2
+
+ */
 val s = {}
 
 
-//ex3
+/*ex3
+
+ */
 var x : Unit= {}
 var y = 0
 x=y=1
 
 
-//ex4
+/*ex4
+
+ */
 blah + "ex4"
 var counter: Int =10
 while(counter>=0){
@@ -31,14 +44,22 @@ while(counter>=0){
 for( i <- 10 to 1 by -1){
   println(i)
 }
+
+
 //ex5
+/*ex
+
+ */
 def countdown(n : Int): Unit ={
   for(i <- n to 0 by -1){
     println(i)
   }
 }
 countdown(10)
-//ex6
+
+/*ex6
+
+ */
 def calProduct(s : String) = {
   var prod: Long =1
   for (ch <- s){
@@ -50,7 +71,9 @@ val s1 = "Hello"
 calProduct(s1)
 
 
-//ex9
+/*ex9
+
+ */
 def recurCalProduct (args: String) : Long = {
   if (args.length>1){
     args.head.toLong * recurCalProduct(args.tail)
@@ -58,7 +81,9 @@ def recurCalProduct (args: String) : Long = {
 }
 recurCalProduct(s1)
 
-//ex10
+/*ex10
+
+ */
 def pow(x: Int, n: Int) : Double ={
   if (n == 0) 1
   else if (n < 0)  1/pow(x, -n)
